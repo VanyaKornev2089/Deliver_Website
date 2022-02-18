@@ -1,0 +1,35 @@
+.container {
+  max-width: 1171px;
+  width: 100%;
+  margin: auto;
+}
+
+.header {
+  width: 100%;
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__top-link {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.header__menu {
+  background-color: #ba0000;
+}
+
+.logo {
+  background-color: #ffcc00;
+}
+
+.nav__item {
+  color: #ba0000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=style.css.map */
