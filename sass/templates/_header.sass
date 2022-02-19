@@ -4,19 +4,44 @@
         display: flex
         align-items: center
         justify-content: space-between
+        padding: 1.125rem 0
         &-link
             text-decoration: none
             color: $White
+            margin-right: 1.875rem
+            &:last-of-type
+                margin-right: 0
     &__menu
         background-color: $Reds
-.logo
-    background-color: $Yellow
+    &__bottom
+        background-color: $Yellow
+        &-link
+            background: $Reds url('../img/loop.png') no-repeat center
+            height: 50px
+            width: 50px
+            border-radius: 50%
+            cursor: pointer
+            transition: all .3s
+            &:hover
+                filter: drop-shadow(0 5px 20px $Reds)
 .nav
+    padding: 2.5rem 0
     &__item
+        padding: 2.187rem 0
+        margin-right: 2.8rem
         color: $Reds
         text-decoration: none
         text-transform: uppercase
-
+        transition: all .3s
+        &:hover
+          font-weight: bold
+          border-bottom: 4px solid $Reds
+        &:last-of-type
+            margin-right: 0
+.logo
+    display: flex
+    align-items: center
+    justify-content: space-between
 
 
 
