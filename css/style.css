@@ -34,8 +34,7 @@
 }
 
 *, *:before, *:after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
 }
 
@@ -55,15 +54,9 @@ html {
 }
 
 .header__top {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   padding: 1.125rem 0;
 }
 
@@ -91,13 +84,11 @@ html {
   width: 50px;
   border-radius: 50%;
   cursor: pointer;
-  -webkit-transition: all .3s;
   transition: all .3s;
 }
 
 .header__bottom-link:hover {
-  -webkit-filter: drop-shadow(0 5px 20px #ba0000);
-          filter: drop-shadow(0 5px 20px #ba0000);
+  filter: drop-shadow(0 5px 20px #ba0000);
 }
 
 .nav {
@@ -110,7 +101,6 @@ html {
   color: #ba0000;
   text-decoration: none;
   text-transform: uppercase;
-  -webkit-transition: all .3s;
   transition: all .3s;
 }
 
@@ -124,14 +114,82 @@ html {
 }
 
 .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero {
+  padding: 11.18rem;
+  background: url("/img/hero.jpeg") no-repeat center/cover;
+}
+
+.hero__title {
+  position: relative;
+  color: #FFFFFF;
+  font-size: 4.375rem;
+  max-width: 27.5rem;
+  line-height: 5rem;
+}
+
+.hero__title::after {
+  content: '';
+  width: 100px;
+  height: 4px;
+  background-color: #ffcc00;
+  position: absolute;
+  bottom: -2.5rem;
+  left: 0;
+}
+
+.hero__text {
+  font-weight: normal;
+  max-width: 46.6rem;
+  color: #ffcc00;
+  font-size: 1.25rem;
+  margin-top: 5.25rem;
+}
+
+.hero__sab-text {
+  position: relative;
+  max-width: 28.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  margin-top: 2.5rem;
+}
+
+.hero__sab-text::before {
+  content: '';
+  position: absolute;
+  background-color: #ffcc00;
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+  right: 180px;
+  top: 18px;
+}
+
+.button {
+  margin-top: 2.56rem;
+  margin-right: 1.18rem;
+  font-weight: bold;
+  padding: 1rem 1.5rem;
+}
+
+.button__yellow {
+  border: none;
+  color: #ba0000;
+  background-color: #ffcc00;
+  border-radius: 25%;
+}
+
+.button__white {
+  border-radius: 25%;
+  background: transparent;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=style.css.map */
