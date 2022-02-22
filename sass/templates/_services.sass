@@ -1,0 +1,77 @@
+.services
+    padding: 6.25rem 23.4rem
+    background-color: $White
+    &__menu
+        display: flex
+        align-items: center
+        height: 6.81rem
+        width: 47rem
+        background:  url('../img/Services.png') no-repeat center
+        margin-bottom: 4.93rem
+    &__title
+        color: $Reds
+        font-size: 3rem
+.card
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    flex-basis: 25%
+    &__menu
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__title
+        color: $Reds
+        margin-top: 1.25rem
+        margin-bottom: 1.25rem
+    &__text
+        color: $Gray
+        margin-bottom: 1.25rem
+    &__link
+        position: relative
+        color: $black
+        font-weight: bold
+        text-decoration: none
+        &::after
+            position: absolute
+            background: url('../img/favicon.ico') no-repeat center
+            top: 0
+            right: 0
+    &__list
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        flex-basis: 25%
+        background-color: $Reds
+        color: $White
+        padding: 1.875rem
+        &-item
+            display: flex
+            width: 210px
+            height: 50px
+            align-items: center      
+.list
+    &-item
+        background: rgba(157, 0, 0, 1)
+        padding: 19px 120px 21px
+    &__top
+        position: relative
+        font-weight: bold
+        padding-bottom: 1.875rem
+        &::after
+            content: ''
+            width: 80px
+            height: 2px
+            background-color: $Yellow
+            position: absolute
+            bottom: 0
+            left: 0
+    &__bottom
+        font-weight: normal
+.button__item
+    width: 50px
+    height: 50px
+    background-color: $Yellow
+    border: none
+
+        

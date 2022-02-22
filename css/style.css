@@ -120,8 +120,25 @@ html {
 }
 
 .hero {
+  position: relative;
   padding: 11.18rem;
   background: url("/img/hero.jpeg") no-repeat center/cover;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 3;
+}
+
+.hero::before {
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(22deg, red 0%, rgba(33, 1, 1, 0) 100%);
+  z-index: 0;
 }
 
 .hero__title {
@@ -183,13 +200,124 @@ html {
   border: none;
   color: #ba0000;
   background-color: #ffcc00;
-  border-radius: 25%;
+  border-radius: 50px;
+}
+
+.button__yellow:hover {
+  filter: drop-shadow(0 5px 20px #ffcc00);
+  transition: all .3s;
 }
 
 .button__white {
-  border-radius: 25%;
+  border-radius: 50px;
   background: transparent;
   border: 2px solid #FFFFFF;
   color: #FFFFFF;
+}
+
+.services {
+  padding: 6.25rem 23.4rem;
+  background-color: #FFFFFF;
+}
+
+.services__menu {
+  display: flex;
+  align-items: center;
+  height: 6.81rem;
+  width: 47rem;
+  background: url("../img/Services.png") no-repeat center;
+  margin-bottom: 4.93rem;
+}
+
+.services__title {
+  color: #ba0000;
+  font-size: 3rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-basis: 25%;
+}
+
+.card__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__title {
+  color: #ba0000;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.card__text {
+  color: #777777;
+  margin-bottom: 1.25rem;
+}
+
+.card__link {
+  position: relative;
+  color: #222222;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.card__link::after {
+  position: absolute;
+  background: url("../img/favicon.ico") no-repeat center;
+  top: 0;
+  right: 0;
+}
+
+.card__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-basis: 25%;
+  background-color: #ba0000;
+  color: #FFFFFF;
+  padding: 1.875rem;
+}
+
+.card__list-item {
+  display: flex;
+  width: 210px;
+  height: 50px;
+  align-items: center;
+}
+
+.list-item {
+  background: #9d0000;
+  padding: 19px 120px 21px;
+}
+
+.list__top {
+  position: relative;
+  font-weight: bold;
+  padding-bottom: 1.875rem;
+}
+
+.list__top::after {
+  content: '';
+  width: 80px;
+  height: 2px;
+  background-color: #ffcc00;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.list__bottom {
+  font-weight: normal;
+}
+
+.button__item {
+  width: 50px;
+  height: 50px;
+  background-color: #ffcc00;
+  border: none;
 }
 /*# sourceMappingURL=style.css.map */
