@@ -194,6 +194,7 @@ html {
   margin-right: 1.18rem;
   font-weight: bold;
   padding: 1rem 1.5rem;
+  cursor: pointer;
 }
 
 .button__yellow {
@@ -213,6 +214,11 @@ html {
   background: transparent;
   border: 2px solid #FFFFFF;
   color: #FFFFFF;
+}
+
+.button__white:hover {
+  filter: drop-shadow(0 5px 20px #FFFFFF);
+  transition: all .3s;
 }
 
 .services {
@@ -275,11 +281,10 @@ html {
 .card__list {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   flex-basis: 25%;
   background-color: #ba0000;
   color: #FFFFFF;
-  padding: 1.875rem;
+  padding: 2.075rem;
 }
 
 .card__list-item {
@@ -287,20 +292,16 @@ html {
   width: 210px;
   height: 50px;
   align-items: center;
+  margin-top: 2.43rem;
 }
 
-.list-item {
-  background: #9d0000;
-  padding: 19px 120px 21px;
-}
-
-.list__top {
+.card__top {
   position: relative;
-  font-weight: bold;
+  margin-bottom: 1.875rem;
   padding-bottom: 1.875rem;
 }
 
-.list__top::after {
+.card__top::after {
   content: '';
   width: 80px;
   height: 2px;
@@ -308,6 +309,16 @@ html {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+.list-item {
+  background: #9d0000;
+  padding: 13px 46px;
+}
+
+.list__top {
+  font-weight: bold;
+  padding-bottom: 1.875rem;
 }
 
 .list__bottom {
@@ -319,5 +330,52 @@ html {
   height: 50px;
   background-color: #ffcc00;
   border: none;
+}
+
+.button__item-link {
+  max-width: 150px;
+  padding: 1.25rem 0;
+  margin-top: 1.25rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ba0000;
+  background-color: #ffcc00;
+  border-radius: 50px;
+  border: none;
+}
+
+.button__item-link:hover {
+  filter: drop-shadow(0 5px 15px #ffcc00);
+  transition: all .3s;
+}
+
+.provider {
+  padding: 6.25rem 0;
+  background: url("../img/fon.png") no-repeat center;
+}
+
+.provider__title {
+  font-weight: normal;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 34px;
+}
+
+.provider__button {
+  margin-top: 3.125rem;
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  border-radius: 100px;
+  border: none;
+  background: #ffcc00 url("../img/travel.png") no-repeat center;
+}
+
+.provider__button:hover {
+  filter: drop-shadow(0 5px 10px #ffcc00);
+  transition: all .3s;
 }
 /*# sourceMappingURL=style.css.map */
