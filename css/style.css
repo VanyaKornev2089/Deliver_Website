@@ -354,6 +354,7 @@ html {
 
 .provider {
   padding: 6.25rem 0;
+  padding-bottom: 23.75rem;
   background: url("../img/fon.png") no-repeat center;
 }
 
@@ -377,5 +378,26 @@ html {
 .provider__button:hover {
   filter: drop-shadow(0 5px 10px #ffcc00);
   transition: all .3s;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -12.5rem;
+}
+
+.card1 {
+  margin-bottom: 15rem;
+}
+
+.card1__title {
+  color: #ba0000;
+  font-weight: bold;
+  margin-bottom: 1.875em;
+}
+
+.card1__listed {
+  background-color: #fff;
+  color: #777777;
 }
 /*# sourceMappingURL=style.css.map */
