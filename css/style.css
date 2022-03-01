@@ -269,6 +269,7 @@ html {
   color: #222222;
   font-weight: bold;
   text-decoration: none;
+  list-style-image: url("../img/sasha_mudak.png");
 }
 
 .card__link::after {
@@ -388,16 +389,25 @@ html {
 
 .card1 {
   margin-bottom: 15rem;
+  box-shadow: 0 10px 5px -1px rgba(0, 0, 0, 0.1);
 }
 
 .card1__title {
+  margin-left: 1.48rem;
   color: #ba0000;
   font-weight: bold;
-  margin-bottom: 1.875em;
+  margin-top: 1.875rem;
 }
 
 .card1__listed {
   background-color: #fff;
   color: #777777;
+  margin-top: 1rem;
+  margin-bottom: 1.875rem;
+}
+
+.list {
+  list-style-type: none;
+  list-style-image: url("../img/dodick.png");
 }
 /*# sourceMappingURL=style.css.map */
