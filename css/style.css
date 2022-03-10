@@ -138,7 +138,7 @@ html {
 .hero {
   position: relative;
   padding: 11.18rem;
-  background: url("/img/hero.jpeg") no-repeat center/cover;
+  background: url("../img/hero.jpeg") no-repeat center/cover;
 }
 
 .hero__content {
