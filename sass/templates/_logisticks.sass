@@ -2,6 +2,7 @@
     display: flex
     justify-content: space-between
     margin-top: -12.5rem
+    margin-bottom: 6.25rem
 .card1
     margin-bottom: 15rem
     box-shadow: 0 10px 5px -1px rgba(0, 0, 0, .1)
@@ -18,5 +19,42 @@
 .list
    list-style-type: none
    list-style-image: url('../img/dodick.png')
-  
+.logisticks
+    &-form
+        display: flex
+        align-items: center
+        justify-content: space-between
+        &__choice
+            background-color:  $Reds
+            padding: 2.5rem 
+        &__title
+            font-weight: bold
+            background-color: $Yellow
+            color: $Reds
+            border: none
+            padding: 1.25rem 6.06rem
+            &--chosen
+                background-color: $Reds
+                color: $White
+        &__select
+            border: 1px solid #fff  
+            display: flex
+    &-select
+        &__heading
+            color: $White
+            border-right: 1px solid #fff
+            padding: 1.25rem 15.68rem 1.25rem 1.25rem
+    &-img
+        position: relative
+        &::after
+            content: ''
+            position: absolute
+            border: 15px solid $Yellow
+            width: 27.1rem
+            height: 31.25rem
+            top: 0
+            left: 0
+        
+
+    
         
