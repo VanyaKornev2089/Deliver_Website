@@ -24,6 +24,11 @@
         display: flex
         align-items: center
         justify-content: space-between
+        &__container
+            max-width: 35.68rem
+            width: 100%
+        &__titles
+            display: flex
         &__choice
             background-color:  $Reds
             padding: 2.5rem 
@@ -32,18 +37,48 @@
             background-color: $Yellow
             color: $Reds
             border: none
-            padding: 1.25rem 6.06rem
+            width: 50%
+            padding: 1.25rem 0rem
             &--chosen
                 background-color: $Reds
                 color: $White
         &__select
-            border: 1px solid #fff  
+            margin-bottom: 1.18rem 
+            border: 2px solid #fff  
             display: flex
+            height: 55px
+            justify-content: space-between
+            &:last-of-type
+                margin-bottom: 0
+            &--active
+                background-color: $Yellow
+                color: $Reds
+                border: 2px solid $Reds
+                display: block
+                .logisticks-select__button
+                    display: flex
+                    justify-content: space-between
+                    border-left: 2px solid $Reds
+                .logisticks-select__heading
+                    color: $Reds
+                    font-weight: bold
     &-select
+        &__titles
+            display: flex
+        &__heading
+            text-transform: uppercase
+            color: $White
+            padding: 1rem 1rem 1.25rem
+        &__button
+            background-color: $Reds
+            border: none
+            border-left: 2px solid $White
+            padding: 1.43rem
+            background: url('../img/logistick-arrow.png') 
+    &-list
         &__heading
             color: $White
-            border-right: 1px solid #fff
-            padding: 1.25rem 15.68rem 1.25rem 1.25rem
+            font-weight: bold
     &-img
         position: relative
         &::after

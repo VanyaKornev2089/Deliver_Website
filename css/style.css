@@ -504,6 +504,17 @@ html {
           justify-content: space-between;
 }
 
+.logisticks-form__container {
+  max-width: 35.68rem;
+  width: 100%;
+}
+
+.logisticks-form__titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .logisticks-form__choice {
   background-color: #ba0000;
   padding: 2.5rem;
@@ -514,7 +525,8 @@ html {
   background-color: #ffcc00;
   color: #ba0000;
   border: none;
-  padding: 1.25rem 6.06rem;
+  width: 50%;
+  padding: 1.25rem 0rem;
 }
 
 .logisticks-form__title--chosen {
@@ -523,16 +535,66 @@ html {
 }
 
 .logisticks-form__select {
-  border: 1px solid #fff;
+  margin-bottom: 1.18rem;
+  border: 2px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 55px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logisticks-form__select:last-of-type {
+  margin-bottom: 0;
+}
+
+.logisticks-form__select--active {
+  background-color: #ffcc00;
+  color: #ba0000;
+  border: 2px solid #ba0000;
+  display: block;
+}
+
+.logisticks-form__select--active .logisticks-select__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-left: 2px solid #ba0000;
+}
+
+.logisticks-form__select--active .logisticks-select__heading {
+  color: #ba0000;
+  font-weight: bold;
+}
+
+.logisticks-select__titles {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .logisticks-select__heading {
+  text-transform: uppercase;
   color: #FFFFFF;
-  border-right: 1px solid #fff;
-  padding: 1.25rem 15.68rem 1.25rem 1.25rem;
+  padding: 1rem 1rem 1.25rem;
+}
+
+.logisticks-select__button {
+  background-color: #ba0000;
+  border: none;
+  border-left: 2px solid #FFFFFF;
+  padding: 1.43rem;
+  background: url("../img/logistick-arrow.png");
+}
+
+.logisticks-list__heading {
+  color: #FFFFFF;
+  font-weight: bold;
 }
 
 .logisticks-img {
