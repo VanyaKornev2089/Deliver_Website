@@ -551,7 +551,7 @@ html {
 }
 
 .logisticks-form__select--active {
-  background-color: #ffcc00;
+  height: auto;
   color: #ba0000;
   border: 2px solid #ba0000;
   display: block;
@@ -573,9 +573,11 @@ html {
 }
 
 .logisticks-select__titles {
+  background-color: #ffcc00;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 48px;
 }
 
 .logisticks-select__heading {
@@ -592,9 +594,25 @@ html {
   background: url("../img/logistick-arrow.png");
 }
 
+.logisticks-list {
+  border: 2px solid #ffcc00;
+  background-color: #a00000;
+  padding: 1.18rem 3.125rem 1.18rem 1.18rem;
+}
+
+.logisticks-list__list {
+  padding-left: 1.3rem;
+}
+
 .logisticks-list__heading {
   color: #FFFFFF;
   font-weight: bold;
+  margin-bottom: 0.7rem;
+}
+
+.logisticks-list__item {
+  color: #FFFFFF;
+  list-style-image: url(../img/dodick.png);
 }
 
 .logisticks-img {

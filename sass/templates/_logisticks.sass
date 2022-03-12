@@ -51,7 +51,7 @@
             &:last-of-type
                 margin-bottom: 0
             &--active
-                background-color: $Yellow
+                height: auto
                 color: $Reds
                 border: 2px solid $Reds
                 display: block
@@ -64,7 +64,9 @@
                     font-weight: bold
     &-select
         &__titles
+            background-color: $Yellow
             display: flex
+            height: 48px
         &__heading
             text-transform: uppercase
             color: $White
@@ -76,9 +78,18 @@
             padding: 1.43rem
             background: url('../img/logistick-arrow.png') 
     &-list
+        border: 2px solid $Yellow
+        background-color: $Dreds
+        padding: 1.18rem 3.125rem 1.18rem 1.18rem
+        &__list
+            padding-left: 1.3rem
         &__heading
             color: $White
             font-weight: bold
+            margin-bottom: 0.7rem
+        &__item
+            color: $White
+            list-style-image: url(../img/dodick.png)
     &-img
         position: relative
         &::after
