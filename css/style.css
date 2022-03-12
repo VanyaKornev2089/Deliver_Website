@@ -73,6 +73,11 @@ html {
   margin-right: 1.875rem;
 }
 
+.header__top-link::before {
+  content: '';
+  background: url("../img/people.png") no-repeat center;
+}
+
 .header__top-link:last-of-type {
   margin-right: 0;
 }
@@ -468,7 +473,6 @@ html {
 }
 
 .card1 {
-  margin-bottom: 15rem;
   -webkit-box-shadow: 0 10px 5px -1px rgba(0, 0, 0, 0.1);
           box-shadow: 0 10px 5px -1px rgba(0, 0, 0, 0.1);
 }
@@ -496,9 +500,9 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -573,6 +577,9 @@ html {
 }
 
 .logisticks-select__titles {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: #ffcc00;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -591,11 +598,12 @@ html {
   border: none;
   border-left: 2px solid #FFFFFF;
   padding: 1.43rem;
-  background: url("../img/logistick-arrow.png");
+  background: url("../img/.png");
 }
 
 .logisticks-list {
   border: 2px solid #ffcc00;
+  border-top: none;
   background-color: #a00000;
   padding: 1.18rem 3.125rem 1.18rem 1.18rem;
 }

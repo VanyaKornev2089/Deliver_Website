@@ -4,7 +4,6 @@
     margin-top: -12.5rem
     margin-bottom: 6.25rem
 .card1
-    margin-bottom: 15rem
     box-shadow: 0 10px 5px -1px rgba(0, 0, 0, .1)
     &__title
         margin-left: 1.48rem
@@ -22,7 +21,7 @@
 .logisticks
     &-form
         display: flex
-        align-items: center
+        align-items: flex-start
         justify-content: space-between
         &__container
             max-width: 35.68rem
@@ -64,6 +63,7 @@
                     font-weight: bold
     &-select
         &__titles
+            justify-content: space-between
             background-color: $Yellow
             display: flex
             height: 48px
@@ -76,9 +76,10 @@
             border: none
             border-left: 2px solid $White
             padding: 1.43rem
-            background: url('../img/logistick-arrow.png') 
+            background: url('../img/.png') 
     &-list
         border: 2px solid $Yellow
+        border-top: none
         background-color: $Dreds
         padding: 1.18rem 3.125rem 1.18rem 1.18rem
         &__list
