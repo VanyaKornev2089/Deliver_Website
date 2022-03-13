@@ -51,7 +51,7 @@ html {
 }
 
 .container-tight {
-  max-width: 853px;
+  max-width: 750px;
   width: 100%;
   margin: auto;
 }
@@ -755,7 +755,7 @@ html {
 
 .footer {
   padding: 8.125rem 0;
-  padding-bottom: 5.625rem;
+  padding-bottom: 4rem;
   background: url("../img/left-side.png") no-repeat left bottom, url("../img/right-side.png") no-repeat right bottom;
 }
 
