@@ -50,6 +50,12 @@ html {
   margin: auto;
 }
 
+.container-tight {
+  max-width: 853px;
+  width: 100%;
+  margin: auto;
+}
+
 .header {
   width: 100%;
 }
@@ -496,6 +502,10 @@ html {
   list-style-image: url("../img/dodick.png");
 }
 
+.logisticks {
+  padding-bottom: 6.25rem;
+}
+
 .logisticks-form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -635,5 +645,121 @@ html {
   height: 31.25rem;
   top: 0;
   left: 0;
+}
+
+.information {
+  background-color: #ba0000;
+  padding: 6.25rem 0;
+}
+
+.information-title {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.information-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.information-content__text {
+  color: #FFFFFF;
+  max-width: 42.5rem;
+}
+
+.information-content__button {
+  background-color: #a00000;
+  border: none;
+  color: #FFFFFF;
+  border-radius: 50px;
+  padding: 1.25rem 1.875rem;
+  text-transform: uppercase;
+}
+
+.information-content__button:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-filter: drop-shadow(0 5px 15px #a00000);
+          filter: drop-shadow(0 5px 15px #a00000);
+}
+
+.sponsors {
+  padding: 4.37rem 0;
+}
+
+.sponsors-imgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer {
+  padding: 8.125rem 0;
+  padding-bottom: 5.625rem;
+  background-image: url("../img/right-side.png") no-repeat center;
+}
+
+.footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-title:last-of-type .footer-title__text {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.footer-title:last-of-type .footer-title__text:hover {
+  color: #00BFFF;
+}
+
+.footer-title__heading {
+  margin-bottom: 2rem;
+  color: #ba0000;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.footer-title__text {
+  font-weight: bold;
+  text-transform: uppercase;
+  list-style-type: none;
+  list-style-image: url("../img/sasha_mudak.png");
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  color: #777777;
+}
+
+.footer-title__text:hover {
+  color: #ffcc00;
+}
+
+.footer__ul {
+  padding-left: 1.2rem;
 }
 /*# sourceMappingURL=style.css.map */
