@@ -79,8 +79,45 @@ html {
   margin-right: 1.875rem;
 }
 
-.header__top-link::before {
+.header__top-link--arrow {
+  position: relative;
+}
+
+.header__top-link--arrow::after {
   content: '';
+  background: url("../img/arrow__icon.png") no-repeat center;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 55px;
+  bottom: 3px;
+}
+
+.header__top-link--arrow1 {
+  position: relative;
+}
+
+.header__top-link--arrow1::after {
+  content: '';
+  background: url("../img/arrow__icon.png") no-repeat center;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 115px;
+  bottom: 3px;
+}
+
+.header__top-link--people {
+  position: relative;
+}
+
+.header__top-link--people::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: -22px;
+  bottom: 3px;
   background: url("../img/people.png") no-repeat center;
 }
 
@@ -335,14 +372,16 @@ html {
   color: #222222;
   font-weight: bold;
   text-decoration: none;
-  list-style-image: url("../img/sasha_mudak.png");
 }
 
 .card__link::after {
+  content: '';
   position: absolute;
-  background: url("../img/favicon.ico") no-repeat center;
-  top: 0;
-  right: 0;
+  width: 20px;
+  height: 20px;
+  background: url("../img/redarrow__right.png") no-repeat center;
+  top: 3px;
+  right: -17px;
 }
 
 .card__list {
@@ -405,8 +444,8 @@ html {
 .button__item {
   width: 50px;
   height: 50px;
-  background-color: #ffcc00;
   border: none;
+  background: #ffcc00 url("../img/vanya__down.png") no-repeat center;
 }
 
 .button__item-link {
@@ -608,7 +647,11 @@ html {
   border: none;
   border-left: 2px solid #FFFFFF;
   padding: 1.43rem;
-  background: url("../img/.png");
+  background: url("../img/arrow__icon.png") no-repeat center;
+}
+
+.logisticks-select__button--active {
+  background: url("../img/redicon__arrow.png") no-repeat center;
 }
 
 .logisticks-list {
@@ -713,7 +756,7 @@ html {
 .footer {
   padding: 8.125rem 0;
   padding-bottom: 5.625rem;
-  background-image: url("../img/right-side.png") no-repeat center;
+  background: url("../img/left-side.png") no-repeat left bottom, url("../img/right-side.png") no-repeat right bottom;
 }
 
 .footer-container {

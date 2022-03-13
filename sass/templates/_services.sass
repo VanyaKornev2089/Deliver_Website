@@ -32,12 +32,14 @@
         color: $black
         font-weight: bold
         text-decoration: none
-        list-style-image: url('../img/sasha_mudak.png')
         &::after
+            content: ''
             position: absolute
-            background: url('../img/favicon.ico') no-repeat center
-            top: 0
-            right: 0
+            width: 20px
+            height: 20px
+            background: url('../img/redarrow__right.png') no-repeat center
+            top: 3px
+            right: -17px
     &__list
         display: flex
         flex-direction: column
@@ -76,8 +78,8 @@
 .button__item
     width: 50px
     height: 50px
-    background-color: $Yellow 
     border: none
+    background: $Yellow url('../img/vanya__down.png') no-repeat center
     &-link
         max-width: 150px
         padding: 1.25rem 0

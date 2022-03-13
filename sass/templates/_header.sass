@@ -9,9 +9,36 @@
             text-decoration: none
             color: $White
             margin-right: 1.875rem
-            &::before
-                content: ''
-                background: url('../img/people.png') no-repeat center
+            &--arrow
+                position: relative
+                &::after
+                    content: ''
+                    background: url('../img/arrow__icon.png') no-repeat center
+                    position: absolute
+                    width: 20px
+                    height: 20px
+                    left: 55px
+                    bottom: 3px
+            &--arrow1
+                position: relative
+                &::after
+                    content: ''
+                    background: url('../img/arrow__icon.png') no-repeat center
+                    position: absolute
+                    width: 20px
+                    height: 20px
+                    left: 115px
+                    bottom: 3px
+            &--people
+                position: relative
+                &::before
+                    content: ''
+                    position: absolute
+                    width: 20px
+                    height: 20px
+                    left: -22px
+                    bottom: 3px
+                    background: url('../img/people.png') no-repeat center
             &:last-of-type
                 margin-right: 0
     &__menu
